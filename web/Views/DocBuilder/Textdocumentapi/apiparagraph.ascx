@@ -45,6 +45,10 @@
                         <td>Add an element to the current paragraph.</td>
                     </tr>
                     <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiparagraph/addinlinelvlsdt") %>">AddInlineLvlSdt</a></td>
+                        <td>Add the created inline text content control to the paragraph. If undefined or null, then the new ApiInlineLvlSdt class will be created and added to the paragraph.</td>
+                    </tr>
+                    <tr class="tablerow">
                         <td><a href="<%= Url.Action("textdocumentapi/apiparagraph/addlinebreak") %>">AddLineBreak</a></td>
                         <td>Add line break to the current position and start the next element from a new line.</td>
                     </tr>

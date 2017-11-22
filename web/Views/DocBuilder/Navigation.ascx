@@ -105,6 +105,9 @@
                         <a href="<%= Url.Action("textdocumentapi/api/createimage") %>">CreateImage</a>
                     </li>
                     <li>
+                        <a href="<%= Url.Action("textdocumentapi/api/createinlinelvlsdt") %>">CreateInlineLvlSdt</a>
+                    </li>
+                    <li>
                         <a href="<%= Url.Action("textdocumentapi/api/createlineargradientfill") %>">CreateLinearGradientFill</a>
                     </li>
                     <li>
@@ -310,6 +313,38 @@
                 </ul>
             </li>
             <li>
+                <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt") %>">ApiInlineLvlSdt</a>
+                <ul>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/addelement") %>">AddElement</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/getclasstype") %>">GetClassType</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/getelement") %>">GetElement</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/getelementscount") %>">GetElementsCount</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/removeallelements") %>">RemoveAllElements</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/removeelement") %>">RemoveElement</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/setlabel") %>">SetLabel</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/setlock") %>">SetLock</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/settag") %>">SetTag</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <a href="<%= Url.Action("textdocumentapi/apinumbering") %>">ApiNumbering</a>
                 <ul>
                     <li>
@@ -366,6 +401,9 @@
                     </li> 
                     <li>
                         <a href="<%= Url.Action("textdocumentapi/apiparagraph/addelement") %>">AddElement</a>
+                    </li>
+                    <li>
+                        <a href="<%= Url.Action("textdocumentapi/apiparagraph/addinlinelvlsdt") %>">AddInlineLvlSdt</a>
                     </li>
                     <li>
                         <a href="<%= Url.Action("textdocumentapi/apiparagraph/addlinebreak") %>">AddLineBreak</a>

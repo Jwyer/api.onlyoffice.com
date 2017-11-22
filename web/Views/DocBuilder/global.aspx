@@ -1032,6 +1032,32 @@ oWorksheet.GetRange("E2").SetBorders("Bottom", "Dotted", Api.CreateColorFromRGB(
     </div>
 
     <div class="global-type-definitions">
+    <span class="anchor-position" id="SdtLock">&nbsp;</span>
+    <h4 class="header-gray">SdtLock</h4>    
+    <p>The possible values for the inline text content control lock from modification and/or deleting:</p>
+    <ul>
+        <li><b>"sdtLocked"</b> - sets the inline text content control locked from deleting;</li>
+        <li><b>"contentLocked"</b> - sets the inline text content control locked from modifying;</li>
+        <li><b>"sdtContentLocked"</b> - sets the inline text content control locked from both modifying and deleting.</li>
+    </ul>
+    <div class="global-list">
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            <em>"sdtLocked"</em>
+            |
+            <em>"contentLocked"</em>
+            |
+            <em>"sdtContentLocked"</em>
+        </li>
+    </ul>
+    </div>
+    <h5>Example</h5>
+    <pre>// The created inline text content control will be locked both from modifying and deleting:
+oInlineLvlSdt.SetLock("sdtContentLocked");</pre>
+    </div>
+
+    <div class="global-type-definitions">
     <span class="anchor-position" id="ShapeType">&nbsp;</span>
     <h4 class="header-gray">ShapeType</h4>    
     <p>This type specifies the preset shape geometry that will be used for a shape.</p>

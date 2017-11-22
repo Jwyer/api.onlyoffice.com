@@ -110,6 +110,10 @@
                         <td>Create an image with the parameters specified.</td>
                     </tr>
                     <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/api/createinlinelvlsdt") %>">CreateInlineLvlSdt</a></td>
+                        <td>Create an inline text content control.</td>
+                    </tr>
+                    <tr class="tablerow">
                         <td><a href="<%= Url.Action("textdocumentapi/api/createlineargradientfill") %>">CreateLinearGradientFill</a></td>
                         <td>Create a linear gradient fill which allows to fill the object using a selected linear gradient as the object background.</td>
                     </tr>
@@ -435,6 +439,56 @@
             </table>
 
     <h5 class="builder_page_class">
+        <a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt") %>">ApiInlineLvlSdt</a>
+    </h5>
+    <table class="table table-classlist">
+                <thead>
+                    <tr class="tablerow">
+                        <td class="table-classlist-name">Name</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/addelement") %>">AddElement</a></td>
+                        <td> Add an element to the inline text content control.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/getclasstype") %>">GetClassType</a></td>
+                        <td>Get the type of this class.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/getelement") %>">GetElement</a></td>
+                        <td>Get the element of the current inline text content control using the position specified.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/getelementscount") %>">GetElementsCount</a></td>
+                        <td>Get the number of elements in the current inline text content control. The text content control is created with one text run present in it by default, so any even without any element added this method will return the value of '1'.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/removeallelements") %>">RemoveAllElements</a></td>
+                        <td>Remove all the elements from the current inline text content control.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/removeelement") %>">RemoveElement</a></td>
+                        <td>Remove the element using the position specified from the current inline text content control.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/setlabel") %>">SetLabel</a></td>
+                        <td>Add a string label to the current inline text content control.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/setlock") %>">SetLock</a></td>
+                        <td>Set the lock to the current inline text content control: either locks the content from editing, or from deleting the control, or both.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiinlinelvlsdt/settag") %>">SetTag</a></td>
+                        <td>Add a string tag to the current inline text content control.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+    <h5 class="builder_page_class">
         <a href="<%= Url.Action("textdocumentapi/apinumbering") %>">ApiNumbering</a>
     </h5>
     <table class="table table-classlist">
@@ -532,6 +586,10 @@
                     <tr class="tablerow">
                         <td><a href="<%= Url.Action("textdocumentapi/apiparagraph/addelement") %>">AddElement</a></td>
                         <td>Add an element to the current paragraph.</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/apiparagraph/addinlinelvlsdt") %>">AddInlineLvlSdt</a></td>
+                        <td>Add the created inline text content control to the paragraph. If undefined or null, then the new ApiInlineLvlSdt class will be created and added to the paragraph.</td>
                     </tr>
                     <tr class="tablerow">
                         <td><a href="<%= Url.Action("textdocumentapi/apiparagraph/addlinebreak") %>">AddLineBreak</a></td>
@@ -2528,11 +2586,11 @@
         </tr>
         <tr class="tablerow">
             <td><a href="<%= Url.Action("spreadsheetapi/apiworksheet/addimage") %>">AddImage</a></td>
-            <td>Adds the image to the current sheet with the parameters specified.</td>
+            <td>Add the image to the current sheet with the parameters specified.</td>
         </tr>
         <tr class="tablerow">
             <td><a href="<%= Url.Action("spreadsheetapi/apiworksheet/addshape") %>">AddShape</a></td>
-            <td>Adds the shape to the current sheet with the parameters specified.</td>
+            <td>Add the shape to the current sheet with the parameters specified.</td>
         </tr>
         <tr class="tablerow">
             <td><a href="<%= Url.Action("spreadsheetapi/apiworksheet/formatastable") %>">FormatAsTable</a></td>

@@ -31,6 +31,10 @@
                         <td>Create an image with the parameters specified.</td>
                     </tr>
                     <tr class="tablerow">
+                        <td><a href="<%= Url.Action("textdocumentapi/api/createinlinelvlsdt") %>">CreateInlineLvlSdt</a></td>
+                        <td>Create an inline text content control.</td>
+                    </tr>
+                    <tr class="tablerow">
                         <td><a href="<%= Url.Action("textdocumentapi/api/createlineargradientfill") %>">CreateLinearGradientFill</a></td>
                         <td>Create a linear gradient fill which allows to fill the object using a selected linear gradient as the object background.</td>
                     </tr>
